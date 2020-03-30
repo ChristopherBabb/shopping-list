@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Most Fabulous Tyson's and Chris's Shopping List App</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style='text-align: center'>
+    <h1>The Most Fabulous Tyson's and Chris's Shopping List App</h1>
+    <div>
+        <div class="wrapper">
+            <input id='input-field' type='text' /> </br>
+            <button id='add-button'>Add</button>
+            <ul class="list" style='list-style-type: none;'>
+                <li><button class='toggleButton'>X</button>Milk</li>
+                <li><button class='toggleButton'>X</button>Protein</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        //TODO: Here you should register your serviceworker!
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function(registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+        }
+        console.log("ServiceWorker registered sw.js");
+    </script>
+    <script src="logging.js"></script>
+</body>
+
+</html>
