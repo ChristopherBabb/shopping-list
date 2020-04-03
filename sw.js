@@ -24,7 +24,9 @@ self.addEventListener('install', function(event) {
                 '/reset/index.html',
                 '/reset/sw.js',
                 '/sw.js',
-                '/favicon.ico'
+                '/favicon.ico',
+                '/add-icon.svg',
+                '/db.js'
             ]);
         })
     );
