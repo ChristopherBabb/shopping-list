@@ -5,7 +5,7 @@
     "start": "http-server -c-1"
   },
   "devDependencies": {
-    "http-server": "0.8.5"
+    "http-server": "14.1.1"
   },
   "description": "It's a really simple ServiceWorker exercise. No build systems, (almost) no dependencies. It's designed to be an interactive introduction to the kinds of things you can do with ServiceWorker.",
   "version": "1.0.0",
